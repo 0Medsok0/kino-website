@@ -1,0 +1,213 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
+
+h1 {
+  margin: 0;
+}
+
+.container h2 {
+  color: #ecc455e0;
+  font-weight: bold;
+  font-family: Georgia, serif;
+  font-size: 48px;
+  text-align: center;
+}
+
+main {
+  padding: 20px;
+  display: flex;
+  background-color: #909090;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  background-color: #707070;
+}
+
+.movie-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.movie {
+  width: 200px;
+  margin: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  overflow: hidden;
+  background-color: #333;
+}
+
+.movie img {
+  width: 100%;
+  height: 70%;
+  object-fit: cover;
+}
+
+.movie-info {
+  padding: 2px;
+}
+
+.movie-title {
+  font-weight: bold;
+  font-family: Georgia, serif;
+  font-size: 16px;
+  text-align: center;
+  color: #ddd;
+}
+
+.movie-rating {
+  color: #f0c040;
+  font-weight: lighter;
+  font-family: Georgia, serif;
+  font-size: 12px;
+  text-align: center;
+  margin: 0;
+}
+.movie-info a {
+  text-decoration: none;
+  color: #ddd;
+  margin-left: 25%;
+  /* text-align:justify; */
+  font-weight: lighter;
+  font-family: Georgia, serif;
+  font-size: 12px;
+}
+/* ____________________ FOOTER ___________________ */
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+  bottom: 0;
+  width: 100%;
+}
+
+/* ___________________  ASIDE  ________________ */
+aside {
+  margin-left: 20px;
+  width: 400px;
+  background-color: #707070;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+aside h2 {
+  color: #ecc455e0;
+  font-weight: bold;
+  font-family: Georgia, serif;
+  font-size: 32px;
+  text-align: center;
+}
+
+.series-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.series {
+  width: 150px;
+  margin: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.series img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.series-info {
+  padding: 10px;
+  background-color: #333;
+  height: 100%;
+}
+
+.series-title {
+  font-weight: bold;
+  color: #ddd;
+  font-size: 16px;
+  font-family: Georgia, serif;
+  text-align: center;
+}
+
+.series-rating {
+  color: #f0c040;
+  font-weight: lighter;
+  font-family: Georgia, serif;
+  font-size: 12px;
+  text-align: center;
+}
+
+/* ___________________ carusel _________________ */
+
+.carousel-container {
+  position: relative;
+  width: 80%;
+  height: 20%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.carousel-track {
+  display: flex;
+  /* overflow: hidden; */
+  width: 100%;
+  transition: transform 0.3s ease-in-out;
+}
+
+.carousel-slide {
+  width: 20%;
+  height: 300px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.carousel-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+.carousel-prev,
+.carousel-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+}
+
+.carousel-prev {
+  left: 10px;
+}
+
+.carousel-next {
+  right: 10px;
+}
